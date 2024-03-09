@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A26677A2B9CD211005BAF19 /* WorkWhizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2667792B9CD211005BAF19 /* WorkWhizApp.swift */; };
+		2A26677C2B9CD211005BAF19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26677B2B9CD211005BAF19 /* ContentView.swift */; };
+		2A26677E2B9CD212005BAF19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A26677D2B9CD212005BAF19 /* Assets.xcassets */; };
+		2A2667812B9CD212005BAF19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2667802B9CD212005BAF19 /* Preview Assets.xcassets */; };
+		2A26678B2B9CD212005BAF19 /* WorkWhizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26678A2B9CD212005BAF19 /* WorkWhizTests.swift */; };
+		2A2667952B9CD212005BAF19 /* WorkWhizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2667942B9CD212005BAF19 /* WorkWhizUITests.swift */; };
+		2A2667972B9CD212005BAF19 /* WorkWhizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2667962B9CD212005BAF19 /* WorkWhizUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A2667872B9CD212005BAF19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A26676E2B9CD211005BAF19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A2667752B9CD211005BAF19;
+			remoteInfo = WorkWhiz;
+		};
+		2A2667912B9CD212005BAF19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A26676E2B9CD211005BAF19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A2667752B9CD211005BAF19;
+			remoteInfo = WorkWhiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A2667762B9CD211005BAF19 /* WorkWhiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkWhiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2667792B9CD211005BAF19 /* WorkWhizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkWhizApp.swift; sourceTree = "<group>"; };
+		2A26677B2B9CD211005BAF19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A26677D2B9CD212005BAF19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A2667802B9CD212005BAF19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A2667862B9CD212005BAF19 /* WorkWhizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkWhizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A26678A2B9CD212005BAF19 /* WorkWhizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkWhizTests.swift; sourceTree = "<group>"; };
+		2A2667902B9CD212005BAF19 /* WorkWhizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkWhizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2667942B9CD212005BAF19 /* WorkWhizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkWhizUITests.swift; sourceTree = "<group>"; };
+		2A2667962B9CD212005BAF19 /* WorkWhizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkWhizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A2667732B9CD211005BAF19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A2667832B9CD212005BAF19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A26678D2B9CD212005BAF19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A26676D2B9CD211005BAF19 = {
+			isa = PBXGroup;
+			children = (
+				2A2667782B9CD211005BAF19 /* WorkWhiz */,
+				2A2667892B9CD212005BAF19 /* WorkWhizTests */,
+				2A2667932B9CD212005BAF19 /* WorkWhizUITests */,
+				2A2667772B9CD211005BAF19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A2667772B9CD211005BAF19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A2667762B9CD211005BAF19 /* WorkWhiz.app */,
+				2A2667862B9CD212005BAF19 /* WorkWhizTests.xctest */,
+				2A2667902B9CD212005BAF19 /* WorkWhizUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A2667782B9CD211005BAF19 /* WorkWhiz */ = {
+			isa = PBXGroup;
+			children = (
+				2A2667792B9CD211005BAF19 /* WorkWhizApp.swift */,
+				2A26677B2B9CD211005BAF19 /* ContentView.swift */,
+				2A26677D2B9CD212005BAF19 /* Assets.xcassets */,
+				2A26677F2B9CD212005BAF19 /* Preview Content */,
+			);
+			path = WorkWhiz;
+			sourceTree = "<group>";
+		};
+		2A26677F2B9CD212005BAF19 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2A2667802B9CD212005BAF19 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A2667892B9CD212005BAF19 /* WorkWhizTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A26678A2B9CD212005BAF19 /* WorkWhizTests.swift */,
+			);
+			path = WorkWhizTests;
+			sourceTree = "<group>";
+		};
+		2A2667932B9CD212005BAF19 /* WorkWhizUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A2667942B9CD212005BAF19 /* WorkWhizUITests.swift */,
+				2A2667962B9CD212005BAF19 /* WorkWhizUITestsLaunchTests.swift */,
+			);
+			path = WorkWhizUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A2667752B9CD211005BAF19 /* WorkWhiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A26679A2B9CD212005BAF19 /* Build configuration list for PBXNativeTarget "WorkWhiz" */;
+			buildPhases = (
+				2A2667722B9CD211005BAF19 /* Sources */,
+				2A2667732B9CD211005BAF19 /* Frameworks */,
+				2A2667742B9CD211005BAF19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorkWhiz;
+			productName = WorkWhiz;
+			productReference = 2A2667762B9CD211005BAF19 /* WorkWhiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A2667852B9CD212005BAF19 /* WorkWhizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A26679D2B9CD212005BAF19 /* Build configuration list for PBXNativeTarget "WorkWhizTests" */;
+			buildPhases = (
+				2A2667822B9CD212005BAF19 /* Sources */,
+				2A2667832B9CD212005BAF19 /* Frameworks */,
+				2A2667842B9CD212005BAF19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A2667882B9CD212005BAF19 /* PBXTargetDependency */,
+			);
+			name = WorkWhizTests;
+			productName = WorkWhizTests;
+			productReference = 2A2667862B9CD212005BAF19 /* WorkWhizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A26678F2B9CD212005BAF19 /* WorkWhizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A2667A02B9CD212005BAF19 /* Build configuration list for PBXNativeTarget "WorkWhizUITests" */;
+			buildPhases = (
+				2A26678C2B9CD212005BAF19 /* Sources */,
+				2A26678D2B9CD212005BAF19 /* Frameworks */,
+				2A26678E2B9CD212005BAF19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A2667922B9CD212005BAF19 /* PBXTargetDependency */,
+			);
+			name = WorkWhizUITests;
+			productName = WorkWhizUITests;
+			productReference = 2A2667902B9CD212005BAF19 /* WorkWhizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A26676E2B9CD211005BAF19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2A2667752B9CD211005BAF19 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					2A2667852B9CD212005BAF19 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 2A2667752B9CD211005BAF19;
+					};
+					2A26678F2B9CD212005BAF19 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 2A2667752B9CD211005BAF19;
+					};
+				};
+			};
+			buildConfigurationList = 2A2667712B9CD211005BAF19 /* Build configuration list for PBXProject "WorkWhiz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A26676D2B9CD211005BAF19;
+			productRefGroup = 2A2667772B9CD211005BAF19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A2667752B9CD211005BAF19 /* WorkWhiz */,
+				2A2667852B9CD212005BAF19 /* WorkWhizTests */,
+				2A26678F2B9CD212005BAF19 /* WorkWhizUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A2667742B9CD211005BAF19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2667812B9CD212005BAF19 /* Preview Assets.xcassets in Resources */,
+				2A26677E2B9CD212005BAF19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A2667842B9CD212005BAF19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A26678E2B9CD212005BAF19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A2667722B9CD211005BAF19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A26677C2B9CD211005BAF19 /* ContentView.swift in Sources */,
+				2A26677A2B9CD211005BAF19 /* WorkWhizApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A2667822B9CD212005BAF19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A26678B2B9CD212005BAF19 /* WorkWhizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A26678C2B9CD212005BAF19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2667972B9CD212005BAF19 /* WorkWhizUITestsLaunchTests.swift in Sources */,
+				2A2667952B9CD212005BAF19 /* WorkWhizUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A2667882B9CD212005BAF19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A2667752B9CD211005BAF19 /* WorkWhiz */;
+			targetProxy = 2A2667872B9CD212005BAF19 /* PBXContainerItemProxy */;
+		};
+		2A2667922B9CD212005BAF19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A2667752B9CD211005BAF19 /* WorkWhiz */;
+			targetProxy = 2A2667912B9CD212005BAF19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A2667982B9CD212005BAF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A2667992B9CD212005BAF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A26679B2B9CD212005BAF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WorkWhiz/Preview Content\"";
+				DEVELOPMENT_TEAM = 674C5F2274;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WorkWhiz.WorkWhiz.WorkWhiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A26679C2B9CD212005BAF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WorkWhiz/Preview Content\"";
+				DEVELOPMENT_TEAM = 674C5F2274;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WorkWhiz.WorkWhiz.WorkWhiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2A26679E2B9CD212005BAF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 674C5F2274;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WorkWhiz.WorkWhiz.WorkWhizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkWhiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WorkWhiz";
+			};
+			name = Debug;
+		};
+		2A26679F2B9CD212005BAF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 674C5F2274;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WorkWhiz.WorkWhiz.WorkWhizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkWhiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WorkWhiz";
+			};
+			name = Release;
+		};
+		2A2667A12B9CD212005BAF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 674C5F2274;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WorkWhiz.WorkWhiz.WorkWhizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WorkWhiz;
+			};
+			name = Debug;
+		};
+		2A2667A22B9CD212005BAF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 674C5F2274;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WorkWhiz.WorkWhiz.WorkWhizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WorkWhiz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A2667712B9CD211005BAF19 /* Build configuration list for PBXProject "WorkWhiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A2667982B9CD212005BAF19 /* Debug */,
+				2A2667992B9CD212005BAF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A26679A2B9CD212005BAF19 /* Build configuration list for PBXNativeTarget "WorkWhiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A26679B2B9CD212005BAF19 /* Debug */,
+				2A26679C2B9CD212005BAF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A26679D2B9CD212005BAF19 /* Build configuration list for PBXNativeTarget "WorkWhizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A26679E2B9CD212005BAF19 /* Debug */,
+				2A26679F2B9CD212005BAF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A2667A02B9CD212005BAF19 /* Build configuration list for PBXNativeTarget "WorkWhizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A2667A12B9CD212005BAF19 /* Debug */,
+				2A2667A22B9CD212005BAF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A26676E2B9CD211005BAF19 /* Project object */;
+}
