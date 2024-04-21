@@ -14,6 +14,39 @@
 		2A26678B2B9CD212005BAF19 /* WorkWhizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26678A2B9CD212005BAF19 /* WorkWhizTests.swift */; };
 		2A2667952B9CD212005BAF19 /* WorkWhizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2667942B9CD212005BAF19 /* WorkWhizUITests.swift */; };
 		2A2667972B9CD212005BAF19 /* WorkWhizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2667962B9CD212005BAF19 /* WorkWhizUITestsLaunchTests.swift */; };
+		2A291FF62BD141230066DF03 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A291FF52BD141230066DF03 /* Coordinator.swift */; };
+		2A291FF92BD1417C0066DF03 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A291FF82BD1417C0066DF03 /* AppCoordinator.swift */; };
+		2A291FFE2BD142DB0066DF03 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A291FFD2BD142DB0066DF03 /* KeychainSwift */; };
+		2A2920002BD146D90066DF03 /* AppCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A291FFF2BD146D90066DF03 /* AppCoordinatorView.swift */; };
+		2A2920022BD147030066DF03 /* AppDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2920012BD147030066DF03 /* AppDestination.swift */; };
+		2A2920052BD14CDC0066DF03 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2920042BD14CDC0066DF03 /* TabBarCoordinator.swift */; };
+		2A56B5A82BD2EA5200AC2599 /* TabBarDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5A72BD2EA5200AC2599 /* TabBarDestination.swift */; };
+		2A56B5AA2BD2EE6400AC2599 /* TabBarCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5A92BD2EE6400AC2599 /* TabBarCoordinatorView.swift */; };
+		2A56B5AD2BD588CD00AC2599 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5AC2BD588CD00AC2599 /* AppTheme.swift */; };
+		2A56B5B02BD5897C00AC2599 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5AF2BD5897C00AC2599 /* ColorExtension.swift */; };
+		2A56B5B22BD58E6300AC2599 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5B12BD58E6300AC2599 /* FontExtensions.swift */; };
+		2A56B5C02BD58F1100AC2599 /* SourceSansPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5B42BD58F1100AC2599 /* SourceSansPro-BlackItalic.ttf */; };
+		2A56B5C12BD58F1100AC2599 /* SourceSansPro-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5B52BD58F1100AC2599 /* SourceSansPro-SemiBoldItalic.ttf */; };
+		2A56B5C22BD58F1100AC2599 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5B62BD58F1100AC2599 /* SourceSansPro-Regular.ttf */; };
+		2A56B5C32BD58F1100AC2599 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5B72BD58F1100AC2599 /* SourceSansPro-Bold.ttf */; };
+		2A56B5C42BD58F1100AC2599 /* SourceSansPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5B82BD58F1100AC2599 /* SourceSansPro-LightItalic.ttf */; };
+		2A56B5C52BD58F1100AC2599 /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5B92BD58F1100AC2599 /* SourceSansPro-Light.ttf */; };
+		2A56B5C62BD58F1100AC2599 /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5BA2BD58F1100AC2599 /* SourceSansPro-Black.ttf */; };
+		2A56B5C72BD58F1100AC2599 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5BB2BD58F1100AC2599 /* SourceSansPro-ExtraLight.ttf */; };
+		2A56B5C82BD58F1100AC2599 /* SourceSansPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5BC2BD58F1100AC2599 /* SourceSansPro-BoldItalic.ttf */; };
+		2A56B5C92BD58F1100AC2599 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5BD2BD58F1100AC2599 /* SourceSansPro-SemiBold.ttf */; };
+		2A56B5CA2BD58F1100AC2599 /* SourceSansPro-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5BE2BD58F1100AC2599 /* SourceSansPro-ExtraLightItalic.ttf */; };
+		2A56B5CB2BD58F1100AC2599 /* SourceSansPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5BF2BD58F1100AC2599 /* SourceSansPro-Italic.ttf */; };
+		2A56B5CE2BD59AAE00AC2599 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5CD2BD59AAE00AC2599 /* HomeCoordinator.swift */; };
+		2A56B5D02BD59AB400AC2599 /* HomeCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5CF2BD59AB400AC2599 /* HomeCoordinatorView.swift */; };
+		2A56B5D22BD59AC100AC2599 /* HomeDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5D12BD59AC100AC2599 /* HomeDestination.swift */; };
+		2A56B5D72BD59CB700AC2599 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5D62BD59CB700AC2599 /* HomeViewModel.swift */; };
+		2A56B5D92BD59CD500AC2599 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5D82BD59CD500AC2599 /* HomeView.swift */; };
+		2A56B5DC2BD5AA6200AC2599 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5DB2BD5AA6200AC2599 /* LoginCoordinator.swift */; };
+		2A56B5DE2BD5AA6C00AC2599 /* LoginCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5DD2BD5AA6C00AC2599 /* LoginCoordinatorView.swift */; };
+		2A56B5E02BD5AA7500AC2599 /* LoginDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5DF2BD5AA7500AC2599 /* LoginDestination.swift */; };
+		2A56B5E32BD5ACE300AC2599 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5E22BD5ACE300AC2599 /* SignInViewModel.swift */; };
+		2A56B5E52BD5ACF600AC2599 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56B5E42BD5ACF600AC2599 /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +77,38 @@
 		2A2667902B9CD212005BAF19 /* WorkWhizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkWhizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2667942B9CD212005BAF19 /* WorkWhizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkWhizUITests.swift; sourceTree = "<group>"; };
 		2A2667962B9CD212005BAF19 /* WorkWhizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkWhizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A291FF52BD141230066DF03 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = ../../../../../../Coordinator.swift; sourceTree = "<group>"; };
+		2A291FF82BD1417C0066DF03 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppCoordinator.swift; path = ../../../../../../../AppCoordinator.swift; sourceTree = "<group>"; };
+		2A291FFF2BD146D90066DF03 /* AppCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppCoordinatorView.swift; path = ../../../../../../../AppCoordinatorView.swift; sourceTree = "<group>"; };
+		2A2920012BD147030066DF03 /* AppDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDestination.swift; path = ../../../../../../../AppDestination.swift; sourceTree = "<group>"; };
+		2A2920042BD14CDC0066DF03 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarCoordinator.swift; path = ../../../../../../../TabBarCoordinator.swift; sourceTree = "<group>"; };
+		2A56B5A72BD2EA5200AC2599 /* TabBarDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarDestination.swift; path = ../../../../../../../TabBarDestination.swift; sourceTree = "<group>"; };
+		2A56B5A92BD2EE6400AC2599 /* TabBarCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarCoordinatorView.swift; path = ../../../../../../../TabBarCoordinatorView.swift; sourceTree = "<group>"; };
+		2A56B5AC2BD588CD00AC2599 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppTheme.swift; path = ../../../../../../../AppTheme.swift; sourceTree = "<group>"; };
+		2A56B5AF2BD5897C00AC2599 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorExtension.swift; path = ../../../../../../../ColorExtension.swift; sourceTree = "<group>"; };
+		2A56B5B12BD58E6300AC2599 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FontExtensions.swift; path = ../../../../../../../FontExtensions.swift; sourceTree = "<group>"; };
+		2A56B5B42BD58F1100AC2599 /* SourceSansPro-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BlackItalic.ttf"; sourceTree = "<group>"; };
+		2A56B5B52BD58F1100AC2599 /* SourceSansPro-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		2A56B5B62BD58F1100AC2599 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		2A56B5B72BD58F1100AC2599 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
+		2A56B5B82BD58F1100AC2599 /* SourceSansPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-LightItalic.ttf"; sourceTree = "<group>"; };
+		2A56B5B92BD58F1100AC2599 /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.ttf"; sourceTree = "<group>"; };
+		2A56B5BA2BD58F1100AC2599 /* SourceSansPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.ttf"; sourceTree = "<group>"; };
+		2A56B5BB2BD58F1100AC2599 /* SourceSansPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLight.ttf"; sourceTree = "<group>"; };
+		2A56B5BC2BD58F1100AC2599 /* SourceSansPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BoldItalic.ttf"; sourceTree = "<group>"; };
+		2A56B5BD2BD58F1100AC2599 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		2A56B5BE2BD58F1100AC2599 /* SourceSansPro-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		2A56B5BF2BD58F1100AC2599 /* SourceSansPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Italic.ttf"; sourceTree = "<group>"; };
+		2A56B5CD2BD59AAE00AC2599 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeCoordinator.swift; path = ../../../../../../../HomeCoordinator.swift; sourceTree = "<group>"; };
+		2A56B5CF2BD59AB400AC2599 /* HomeCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeCoordinatorView.swift; path = ../../../../../../../HomeCoordinatorView.swift; sourceTree = "<group>"; };
+		2A56B5D12BD59AC100AC2599 /* HomeDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeDestination.swift; path = ../../../../../../../HomeDestination.swift; sourceTree = "<group>"; };
+		2A56B5D62BD59CB700AC2599 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = ../../../../../../../HomeViewModel.swift; sourceTree = "<group>"; };
+		2A56B5D82BD59CD500AC2599 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../../../../../../HomeView.swift; sourceTree = "<group>"; };
+		2A56B5DB2BD5AA6200AC2599 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginCoordinator.swift; path = ../../../../../../../LoginCoordinator.swift; sourceTree = "<group>"; };
+		2A56B5DD2BD5AA6C00AC2599 /* LoginCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginCoordinatorView.swift; path = ../../../../../../../LoginCoordinatorView.swift; sourceTree = "<group>"; };
+		2A56B5DF2BD5AA7500AC2599 /* LoginDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginDestination.swift; path = ../../../../../../../LoginDestination.swift; sourceTree = "<group>"; };
+		2A56B5E22BD5ACE300AC2599 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewModel.swift; path = ../../../../../../../SignInViewModel.swift; sourceTree = "<group>"; };
+		2A56B5E42BD5ACF600AC2599 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInView.swift; path = ../../../../../../../SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A291FFE2BD142DB0066DF03 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +160,10 @@
 		2A2667782B9CD211005BAF19 /* WorkWhiz */ = {
 			isa = PBXGroup;
 			children = (
+				2A291FF42BD13FEB0066DF03 /* Features */,
+				2A291FF32BD13FE30066DF03 /* Modifiers */,
+				2A291FF22BD13FD40066DF03 /* Utilities */,
+				2A291FF12BD13F2D0066DF03 /* Coordinators */,
 				2A2667792B9CD211005BAF19 /* WorkWhizApp.swift */,
 				2A26677B2B9CD211005BAF19 /* ContentView.swift */,
 				2A26677D2B9CD212005BAF19 /* Assets.xcassets */,
@@ -127,6 +197,138 @@
 			path = WorkWhizUITests;
 			sourceTree = "<group>";
 		};
+		2A291FF12BD13F2D0066DF03 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				2A56B5DA2BD5AA4D00AC2599 /* LoginCoordinator */,
+				2A56B5CC2BD59A2200AC2599 /* HomeCoordinator */,
+				2A2920032BD14CD60066DF03 /* TabBarCoordinator */,
+				2A291FF72BD1416B0066DF03 /* AppCoordinator */,
+				2A291FF52BD141230066DF03 /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		2A291FF22BD13FD40066DF03 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2A56B5B32BD58F1100AC2599 /* Fonts */,
+				2A56B5AE2BD5896C00AC2599 /* Extensions */,
+				2A56B5AB2BD586CD00AC2599 /* Theme */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2A291FF32BD13FE30066DF03 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		2A291FF42BD13FEB0066DF03 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2A56B5E12BD5ACD800AC2599 /* SignIn */,
+				2A56B5D32BD59C9D00AC2599 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2A291FF72BD1416B0066DF03 /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2A291FF82BD1417C0066DF03 /* AppCoordinator.swift */,
+				2A291FFF2BD146D90066DF03 /* AppCoordinatorView.swift */,
+				2A2920012BD147030066DF03 /* AppDestination.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		2A2920032BD14CD60066DF03 /* TabBarCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2A2920042BD14CDC0066DF03 /* TabBarCoordinator.swift */,
+				2A56B5A72BD2EA5200AC2599 /* TabBarDestination.swift */,
+				2A56B5A92BD2EE6400AC2599 /* TabBarCoordinatorView.swift */,
+			);
+			path = TabBarCoordinator;
+			sourceTree = "<group>";
+		};
+		2A56B5AB2BD586CD00AC2599 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2A56B5AC2BD588CD00AC2599 /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		2A56B5AE2BD5896C00AC2599 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A56B5AF2BD5897C00AC2599 /* ColorExtension.swift */,
+				2A56B5B12BD58E6300AC2599 /* FontExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2A56B5B32BD58F1100AC2599 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2A56B5B42BD58F1100AC2599 /* SourceSansPro-BlackItalic.ttf */,
+				2A56B5B52BD58F1100AC2599 /* SourceSansPro-SemiBoldItalic.ttf */,
+				2A56B5B62BD58F1100AC2599 /* SourceSansPro-Regular.ttf */,
+				2A56B5B72BD58F1100AC2599 /* SourceSansPro-Bold.ttf */,
+				2A56B5B82BD58F1100AC2599 /* SourceSansPro-LightItalic.ttf */,
+				2A56B5B92BD58F1100AC2599 /* SourceSansPro-Light.ttf */,
+				2A56B5BA2BD58F1100AC2599 /* SourceSansPro-Black.ttf */,
+				2A56B5BB2BD58F1100AC2599 /* SourceSansPro-ExtraLight.ttf */,
+				2A56B5BC2BD58F1100AC2599 /* SourceSansPro-BoldItalic.ttf */,
+				2A56B5BD2BD58F1100AC2599 /* SourceSansPro-SemiBold.ttf */,
+				2A56B5BE2BD58F1100AC2599 /* SourceSansPro-ExtraLightItalic.ttf */,
+				2A56B5BF2BD58F1100AC2599 /* SourceSansPro-Italic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2A56B5CC2BD59A2200AC2599 /* HomeCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2A56B5CD2BD59AAE00AC2599 /* HomeCoordinator.swift */,
+				2A56B5CF2BD59AB400AC2599 /* HomeCoordinatorView.swift */,
+				2A56B5D12BD59AC100AC2599 /* HomeDestination.swift */,
+			);
+			path = HomeCoordinator;
+			sourceTree = "<group>";
+		};
+		2A56B5D32BD59C9D00AC2599 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2A56B5D62BD59CB700AC2599 /* HomeViewModel.swift */,
+				2A56B5D82BD59CD500AC2599 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2A56B5DA2BD5AA4D00AC2599 /* LoginCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2A56B5DB2BD5AA6200AC2599 /* LoginCoordinator.swift */,
+				2A56B5DD2BD5AA6C00AC2599 /* LoginCoordinatorView.swift */,
+				2A56B5DF2BD5AA7500AC2599 /* LoginDestination.swift */,
+			);
+			path = LoginCoordinator;
+			sourceTree = "<group>";
+		};
+		2A56B5E12BD5ACD800AC2599 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				2A56B5E22BD5ACE300AC2599 /* SignInViewModel.swift */,
+				2A56B5E42BD5ACF600AC2599 /* SignInView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +345,9 @@
 			dependencies = (
 			);
 			name = WorkWhiz;
+			packageProductDependencies = (
+				2A291FFD2BD142DB0066DF03 /* KeychainSwift */,
+			);
 			productName = WorkWhiz;
 			productReference = 2A2667762B9CD211005BAF19 /* WorkWhiz.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +420,9 @@
 				Base,
 			);
 			mainGroup = 2A26676D2B9CD211005BAF19;
+			packageReferences = (
+				2A291FFC2BD142DB0066DF03 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 2A2667772B9CD211005BAF19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,8 +439,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A56B5C72BD58F1100AC2599 /* SourceSansPro-ExtraLight.ttf in Resources */,
+				2A56B5C42BD58F1100AC2599 /* SourceSansPro-LightItalic.ttf in Resources */,
+				2A56B5C22BD58F1100AC2599 /* SourceSansPro-Regular.ttf in Resources */,
+				2A56B5CA2BD58F1100AC2599 /* SourceSansPro-ExtraLightItalic.ttf in Resources */,
+				2A56B5C82BD58F1100AC2599 /* SourceSansPro-BoldItalic.ttf in Resources */,
+				2A56B5C02BD58F1100AC2599 /* SourceSansPro-BlackItalic.ttf in Resources */,
 				2A2667812B9CD212005BAF19 /* Preview Assets.xcassets in Resources */,
+				2A56B5C12BD58F1100AC2599 /* SourceSansPro-SemiBoldItalic.ttf in Resources */,
 				2A26677E2B9CD212005BAF19 /* Assets.xcassets in Resources */,
+				2A56B5C32BD58F1100AC2599 /* SourceSansPro-Bold.ttf in Resources */,
+				2A56B5C92BD58F1100AC2599 /* SourceSansPro-SemiBold.ttf in Resources */,
+				2A56B5C62BD58F1100AC2599 /* SourceSansPro-Black.ttf in Resources */,
+				2A56B5CB2BD58F1100AC2599 /* SourceSansPro-Italic.ttf in Resources */,
+				2A56B5C52BD58F1100AC2599 /* SourceSansPro-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +477,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A56B5E02BD5AA7500AC2599 /* LoginDestination.swift in Sources */,
+				2A56B5D22BD59AC100AC2599 /* HomeDestination.swift in Sources */,
+				2A56B5A82BD2EA5200AC2599 /* TabBarDestination.swift in Sources */,
+				2A291FF92BD1417C0066DF03 /* AppCoordinator.swift in Sources */,
+				2A56B5D72BD59CB700AC2599 /* HomeViewModel.swift in Sources */,
+				2A56B5B22BD58E6300AC2599 /* FontExtensions.swift in Sources */,
+				2A56B5D92BD59CD500AC2599 /* HomeView.swift in Sources */,
+				2A56B5DC2BD5AA6200AC2599 /* LoginCoordinator.swift in Sources */,
+				2A56B5E32BD5ACE300AC2599 /* SignInViewModel.swift in Sources */,
 				2A26677C2B9CD211005BAF19 /* ContentView.swift in Sources */,
 				2A26677A2B9CD211005BAF19 /* WorkWhizApp.swift in Sources */,
+				2A56B5AA2BD2EE6400AC2599 /* TabBarCoordinatorView.swift in Sources */,
+				2A2920052BD14CDC0066DF03 /* TabBarCoordinator.swift in Sources */,
+				2A56B5DE2BD5AA6C00AC2599 /* LoginCoordinatorView.swift in Sources */,
+				2A291FF62BD141230066DF03 /* Coordinator.swift in Sources */,
+				2A56B5CE2BD59AAE00AC2599 /* HomeCoordinator.swift in Sources */,
+				2A2920022BD147030066DF03 /* AppDestination.swift in Sources */,
+				2A56B5D02BD59AB400AC2599 /* HomeCoordinatorView.swift in Sources */,
+				2A2920002BD146D90066DF03 /* AppCoordinatorView.swift in Sources */,
+				2A56B5B02BD5897C00AC2599 /* ColorExtension.swift in Sources */,
+				2A56B5E52BD5ACF600AC2599 /* SignInView.swift in Sources */,
+				2A56B5AD2BD588CD00AC2599 /* AppTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +675,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WorkWhiz.WorkWhiz.WorkWhiz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WorkWhiz.WorkWhiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,7 +704,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WorkWhiz.WorkWhiz.WorkWhiz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WorkWhiz.WorkWhiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -588,6 +828,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A291FFC2BD142DB0066DF03 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 22.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A291FFD2BD142DB0066DF03 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A291FFC2BD142DB0066DF03 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2A26676E2B9CD211005BAF19 /* Project object */;
 }
