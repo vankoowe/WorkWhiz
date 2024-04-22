@@ -7,6 +7,12 @@
 
 import Foundation
 
+enum LoginType: String {
+    case google
+    case facebook
+}
+
 class SignInViewModel: ObservableObject {
-    
+    @Published var email = ""
+    @Published var password = ""
 }

@@ -20,7 +20,17 @@ public struct ColorTheme {
 }
 
 public struct PrimaryColors {
-    public let primary = Color.green
+    public let primary = Color(hex: "#ea643f")
+    public let secondary = Color(hex: "#e1545d")
+    
+    public var gradient: LinearGradient {
+        return LinearGradient(
+            gradient: Gradient(colors: [primary, secondary]),
+            startPoint: .leading,
+            endPoint: .trailing
+        )
+    }
+    
     public let errorRed = Color.red
 }
 
