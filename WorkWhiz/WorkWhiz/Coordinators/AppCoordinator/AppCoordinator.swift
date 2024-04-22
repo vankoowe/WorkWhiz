@@ -10,7 +10,7 @@ import KeychainSwift
 
 class AppCoordinator: Coordinator, ObservableObject {
     var childCoordinators = [Coordinator]()
-    
+
     @Published var appState: AppDestination
     // TODO: Implement communication Manager for requests
 
@@ -19,11 +19,11 @@ class AppCoordinator: Coordinator, ObservableObject {
 //        let isUserLoggedIn = true
         
 //        if isUserLoggedIn {
-            appState = .tabBar(TabBarCoordinator())
+//            appState = .tabBar(TabBarCoordinator())
 //        } else {
 //            let coordinator = LoginCoordinator(communication: communicationManager)
 //            
-//            appState = .login(coordinator)
+            appState = .login(LoginCoordinator())
 //            
 //            Task { @MainActor in
 //                coordinator.successfulLogin = handleLoginSuccess
