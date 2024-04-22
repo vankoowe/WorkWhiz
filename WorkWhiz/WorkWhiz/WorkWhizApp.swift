@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct WorkWhizApp: App {
+    @StateObject var appCoordinator: AppCoordinator
+    @StateObject var theme = AppTheme()
+
+    init() {
+        _appCoordinator = StateObject(wrappedValue: AppCoordinator())
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            appCoordinator.start()
+                .environmentObject(theme)
         }
     }
 }
