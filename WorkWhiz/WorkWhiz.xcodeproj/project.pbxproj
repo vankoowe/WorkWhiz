@@ -47,6 +47,7 @@
 		2A61A11F2BD650300039FC92 /* LoginDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A61A11C2BD650300039FC92 /* LoginDestination.swift */; };
 		2A61A1202BD650300039FC92 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A61A11D2BD650300039FC92 /* LoginCoordinator.swift */; };
 		2A61A1212BD650300039FC92 /* LoginCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A61A11E2BD650300039FC92 /* LoginCoordinatorView.swift */; };
+		2A61A1272BD6D24E0039FC92 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A61A1262BD6D24E0039FC92 /* CornerRadius.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		2A61A11C2BD650300039FC92 /* LoginDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDestination.swift; sourceTree = "<group>"; };
 		2A61A11D2BD650300039FC92 /* LoginCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		2A61A11E2BD650300039FC92 /* LoginCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorView.swift; sourceTree = "<group>"; };
+		2A61A1262BD6D24E0039FC92 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +317,7 @@
 		2A61A0F62BD64DDA0039FC92 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				2A61A1262BD6D24E0039FC92 /* CornerRadius.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				2A61A1152BD64FE00039FC92 /* HomeCoordinatorView.swift in Sources */,
 				2A61A0F12BD64D0A0039FC92 /* SignInViewModel.swift in Sources */,
 				2A61A10A2BD64F830039FC92 /* TabBarCoordinator.swift in Sources */,
+				2A61A1272BD6D24E0039FC92 /* CornerRadius.swift in Sources */,
 				2A61A0F32BD64D1A0039FC92 /* HomeViewModel.swift in Sources */,
 				2A61A1102BD64FD20039FC92 /* AppDestination.swift in Sources */,
 				2A61A1002BD64F380039FC92 /* Coordinator.swift in Sources */,
