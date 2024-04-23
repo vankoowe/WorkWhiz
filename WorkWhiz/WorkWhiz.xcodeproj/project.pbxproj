@@ -15,6 +15,8 @@
 		2A2667952B9CD212005BAF19 /* WorkWhizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2667942B9CD212005BAF19 /* WorkWhizUITests.swift */; };
 		2A2667972B9CD212005BAF19 /* WorkWhizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2667962B9CD212005BAF19 /* WorkWhizUITestsLaunchTests.swift */; };
 		2A291FFE2BD142DB0066DF03 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A291FFD2BD142DB0066DF03 /* KeychainSwift */; };
+		2A330F552BD708640046C7DE /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A330F542BD708640046C7DE /* SignUpViewModel.swift */; };
+		2A330F572BD70B750046C7DE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A330F562BD70B750046C7DE /* SignUpView.swift */; };
 		2A56B5C02BD58F1100AC2599 /* SourceSansPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5B42BD58F1100AC2599 /* SourceSansPro-BlackItalic.ttf */; };
 		2A56B5C12BD58F1100AC2599 /* SourceSansPro-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5B52BD58F1100AC2599 /* SourceSansPro-SemiBoldItalic.ttf */; };
 		2A56B5C22BD58F1100AC2599 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A56B5B62BD58F1100AC2599 /* SourceSansPro-Regular.ttf */; };
@@ -50,6 +52,8 @@
 		2A6223252BD6E24800828BB9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6223242BD6E24800828BB9 /* CustomButton.swift */; };
 		2A6223282BD6EF1300828BB9 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6223272BD6EF1300828BB9 /* Typealiases.swift */; };
 		2A62232A2BD6F07900828BB9 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6223292BD6F07900828BB9 /* SignInView.swift */; };
+		2A747C752BD8067000404182 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C742BD8067000404182 /* ForgotPasswordView.swift */; };
+		2A747C772BD8077000404182 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C762BD8077000404182 /* ForgotPasswordViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,8 @@
 		2A2667902B9CD212005BAF19 /* WorkWhizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkWhizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2667942B9CD212005BAF19 /* WorkWhizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkWhizUITests.swift; sourceTree = "<group>"; };
 		2A2667962B9CD212005BAF19 /* WorkWhizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkWhizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A330F542BD708640046C7DE /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		2A330F562BD70B750046C7DE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		2A56B5B42BD58F1100AC2599 /* SourceSansPro-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BlackItalic.ttf"; sourceTree = "<group>"; };
 		2A56B5B52BD58F1100AC2599 /* SourceSansPro-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		2A56B5B62BD58F1100AC2599 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
@@ -116,6 +122,8 @@
 		2A6223262BD6E6D800828BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2A6223272BD6EF1300828BB9 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		2A6223292BD6F07900828BB9 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		2A747C742BD8067000404182 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		2A747C762BD8077000404182 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +239,8 @@
 		2A291FF42BD13FEB0066DF03 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				2A747C732BD8060800404182 /* ForgotPassword */,
+				2A330F532BD708240046C7DE /* SignUp */,
 				2A56B5E12BD5ACD800AC2599 /* SignIn */,
 				2A56B5D32BD59C9D00AC2599 /* Home */,
 			);
@@ -255,6 +265,15 @@
 				2A61A1052BD64F6A0039FC92 /* TabBarDestination.swift */,
 			);
 			path = TabBarCoordinator;
+			sourceTree = "<group>";
+		};
+		2A330F532BD708240046C7DE /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				2A330F542BD708640046C7DE /* SignUpViewModel.swift */,
+				2A330F562BD70B750046C7DE /* SignUpView.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		2A56B5AB2BD586CD00AC2599 /* Theme */ = {
@@ -346,6 +365,15 @@
 				2A6223242BD6E24800828BB9 /* CustomButton.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2A747C732BD8060800404182 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				2A747C742BD8067000404182 /* ForgotPasswordView.swift */,
+				2A747C762BD8077000404182 /* ForgotPasswordViewModel.swift */,
+			);
+			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,6 +529,7 @@
 				2A61A0F82BD64E0F0039FC92 /* ColorExtension.swift in Sources */,
 				2A61A1142BD64FE00039FC92 /* HomeDestination.swift in Sources */,
 				2A61A1152BD64FE00039FC92 /* HomeCoordinatorView.swift in Sources */,
+				2A747C772BD8077000404182 /* ForgotPasswordViewModel.swift in Sources */,
 				2A61A0F12BD64D0A0039FC92 /* SignInViewModel.swift in Sources */,
 				2A61A10A2BD64F830039FC92 /* TabBarCoordinator.swift in Sources */,
 				2A61A1272BD6D24E0039FC92 /* CornerRadius.swift in Sources */,
@@ -510,12 +539,15 @@
 				2A61A1002BD64F380039FC92 /* Coordinator.swift in Sources */,
 				2A61A1212BD650300039FC92 /* LoginCoordinatorView.swift in Sources */,
 				2A61A1202BD650300039FC92 /* LoginCoordinator.swift in Sources */,
+				2A330F552BD708640046C7DE /* SignUpViewModel.swift in Sources */,
 				2A26677C2B9CD211005BAF19 /* ContentView.swift in Sources */,
+				2A330F572BD70B750046C7DE /* SignUpView.swift in Sources */,
 				2A26677A2B9CD211005BAF19 /* WorkWhizApp.swift in Sources */,
 				2A61A10C2BD64FB90039FC92 /* AppCoordinator.swift in Sources */,
 				2A61A0FC2BD64EE50039FC92 /* AppTheme.swift in Sources */,
 				2A61A1062BD64F6A0039FC92 /* TabBarDestination.swift in Sources */,
 				2A61A1082BD64F740039FC92 /* TabBarCoordinatorView.swift in Sources */,
+				2A747C752BD8067000404182 /* ForgotPasswordView.swift in Sources */,
 				2A61A1162BD64FE00039FC92 /* HomeCoordinator.swift in Sources */,
 				2A6223252BD6E24800828BB9 /* CustomButton.swift in Sources */,
 				2A61A10E2BD64FC90039FC92 /* AppCoordinatorView.swift in Sources */,
