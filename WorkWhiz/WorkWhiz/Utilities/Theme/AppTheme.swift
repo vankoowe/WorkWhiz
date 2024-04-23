@@ -44,7 +44,7 @@ public struct TextColors {
 
 public struct BackgroundColors {
     public let defaultBackground = Color(hex: "#000D30")
-    public let placeholder = Color(hex: "#0C356A")
+    public let placeholder = Color.gray
     public let secondaryBackground = Color(hex: "#0C1A42")
     public let black = Color.black
 }

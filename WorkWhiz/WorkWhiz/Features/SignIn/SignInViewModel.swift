@@ -15,4 +15,11 @@ enum LoginType: String {
 class SignInViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
+
+    @MainActor
+    var successfulLogin: (Event)?
+
+    var signUpSelected: (Event)?
+    var forgotPasswordSelected: (Event)?
+
 }
