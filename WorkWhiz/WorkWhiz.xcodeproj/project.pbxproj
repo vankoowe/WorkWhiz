@@ -69,6 +69,10 @@
 		2A747C962BD836EB00404182 /* ProfileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C952BD836EB00404182 /* ProfileDestination.swift */; };
 		2A747C992BD8377700404182 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C982BD8377700404182 /* ProfileView.swift */; };
 		2A747C9B2BD837A000404182 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C9A2BD837A000404182 /* ProfileViewModel.swift */; };
+		2A747C9E2BD858A700404182 /* RecentlyViewedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C9D2BD858A700404182 /* RecentlyViewedView.swift */; };
+		2A747CA12BD8590800404182 /* SectionTitleWithSeeAllButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CA02BD8590800404182 /* SectionTitleWithSeeAllButtonView.swift */; };
+		2A747CA32BD8599B00404182 /* PopularServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CA22BD8599B00404182 /* PopularServicesView.swift */; };
+		2A747CA52BD859D400404182 /* NewOnWorkWhizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CA42BD859D400404182 /* NewOnWorkWhizView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +158,10 @@
 		2A747C952BD836EB00404182 /* ProfileDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDestination.swift; sourceTree = "<group>"; };
 		2A747C982BD8377700404182 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2A747C9A2BD837A000404182 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		2A747C9D2BD858A700404182 /* RecentlyViewedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyViewedView.swift; sourceTree = "<group>"; };
+		2A747CA02BD8590800404182 /* SectionTitleWithSeeAllButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleWithSeeAllButtonView.swift; sourceTree = "<group>"; };
+		2A747CA22BD8599B00404182 /* PopularServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularServicesView.swift; sourceTree = "<group>"; };
+		2A747CA42BD859D400404182 /* NewOnWorkWhizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOnWorkWhizView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +406,8 @@
 		2A6223232BD6E20F00828BB9 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				2A747C9F2BD858DE00404182 /* Home */,
+				2A747C9C2BD8587E00404182 /* Jobs */,
 				2A6223242BD6E24800828BB9 /* CustomButton.swift */,
 			);
 			path = CustomViews;
@@ -467,6 +477,24 @@
 				2A747C9A2BD837A000404182 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		2A747C9C2BD8587E00404182 /* Jobs */ = {
+			isa = PBXGroup;
+			children = (
+				2A747C9D2BD858A700404182 /* RecentlyViewedView.swift */,
+			);
+			path = Jobs;
+			sourceTree = "<group>";
+		};
+		2A747C9F2BD858DE00404182 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2A747CA02BD8590800404182 /* SectionTitleWithSeeAllButtonView.swift */,
+				2A747CA22BD8599B00404182 /* PopularServicesView.swift */,
+				2A747CA42BD859D400404182 /* NewOnWorkWhizView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,12 +654,14 @@
 				2A747C772BD8077000404182 /* ForgotPasswordViewModel.swift in Sources */,
 				2A61A0F12BD64D0A0039FC92 /* SignInViewModel.swift in Sources */,
 				2A747C922BD836B900404182 /* ProfileCoordinator.swift in Sources */,
+				2A747CA52BD859D400404182 /* NewOnWorkWhizView.swift in Sources */,
 				2A61A10A2BD64F830039FC92 /* TabBarCoordinator.swift in Sources */,
 				2A747C812BD82A6F00404182 /* JobsView.swift in Sources */,
 				2A747C7A2BD829C200404182 /* JobsCoordinator.swift in Sources */,
 				2A61A1272BD6D24E0039FC92 /* CornerRadius.swift in Sources */,
 				2A747C992BD8377700404182 /* ProfileView.swift in Sources */,
 				2A61A0F32BD64D1A0039FC92 /* HomeViewModel.swift in Sources */,
+				2A747CA12BD8590800404182 /* SectionTitleWithSeeAllButtonView.swift in Sources */,
 				2A747C962BD836EB00404182 /* ProfileDestination.swift in Sources */,
 				2A62232A2BD6F07900828BB9 /* SignInView.swift in Sources */,
 				2A61A1102BD64FD20039FC92 /* AppDestination.swift in Sources */,
@@ -643,6 +673,7 @@
 				2A330F552BD708640046C7DE /* SignUpViewModel.swift in Sources */,
 				2A747C8A2BD82C5000404182 /* MessagesDestination.swift in Sources */,
 				2A26677C2B9CD211005BAF19 /* ContentView.swift in Sources */,
+				2A747CA32BD8599B00404182 /* PopularServicesView.swift in Sources */,
 				2A747C8F2BD82D0400404182 /* MessagesViewModel.swift in Sources */,
 				2A330F572BD70B750046C7DE /* SignUpView.swift in Sources */,
 				2A747C8D2BD82CD600404182 /* MessagesView.swift in Sources */,
@@ -657,6 +688,7 @@
 				2A747C7C2BD829DD00404182 /* JobsCoordinatorView.swift in Sources */,
 				2A747C752BD8067000404182 /* ForgotPasswordView.swift in Sources */,
 				2A61A1162BD64FE00039FC92 /* HomeCoordinator.swift in Sources */,
+				2A747C9E2BD858A700404182 /* RecentlyViewedView.swift in Sources */,
 				2A6223252BD6E24800828BB9 /* CustomButton.swift in Sources */,
 				2A61A10E2BD64FC90039FC92 /* AppCoordinatorView.swift in Sources */,
 				2A61A0F52BD64D840039FC92 /* HomeView.swift in Sources */,
