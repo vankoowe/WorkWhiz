@@ -19,11 +19,11 @@ class AppCoordinator: Coordinator, ObservableObject {
 //        let isUserLoggedIn = true
         
 //        if isUserLoggedIn {
-//            appState = .tabBar(TabBarCoordinator())
+            appState = .tabBar(TabBarCoordinator())
 //        } else {
 //            let coordinator = LoginCoordinator(communication: communicationManager)
 //            
-            appState = .login(LoginCoordinator())
+//            appState = .login(LoginCoordinator())
 //            
 //            Task { @MainActor in
 //                coordinator.successfulLogin = handleLoginSuccess

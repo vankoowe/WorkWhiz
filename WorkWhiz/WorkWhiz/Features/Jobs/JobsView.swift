@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct JobsView: View {
+    @StateObject var viewModel: JobsViewModel
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Jobs!")
     }
 }
 
 #Preview {
-    JobsView()
+    JobsView(viewModel: JobsViewModel())
 }
