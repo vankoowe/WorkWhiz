@@ -25,7 +25,7 @@ struct TabBarCoordinatorView: View {
                             .lineLimit(1)
                     }
             }
-            .toolbarBackground(theme.colorTheme.background.defaultBackground, for: .tabBar)
+            .toolbarBackground(Color.white, for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)
         }
         .tint(theme.colorTheme.primary.primary)
