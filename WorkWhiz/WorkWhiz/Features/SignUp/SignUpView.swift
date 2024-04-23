@@ -338,7 +338,7 @@ struct SignUpView: View {
                     Spacer()
                 }
                 .padding(.all, theme.spacingTokens.padding.padding8)
-                .foregroundColor(Color.black)
+                .foregroundStyle(Color.black)
             }
             .background(
                 RoundedRectangle(cornerRadius: theme.spacingTokens.cornerRadius.cornerRadius12)
