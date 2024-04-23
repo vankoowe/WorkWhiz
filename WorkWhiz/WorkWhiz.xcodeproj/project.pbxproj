@@ -64,6 +64,11 @@
 		2A747C8A2BD82C5000404182 /* MessagesDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C892BD82C5000404182 /* MessagesDestination.swift */; };
 		2A747C8D2BD82CD600404182 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C8C2BD82CD600404182 /* MessagesView.swift */; };
 		2A747C8F2BD82D0400404182 /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C8E2BD82D0400404182 /* MessagesViewModel.swift */; };
+		2A747C922BD836B900404182 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C912BD836B900404182 /* ProfileCoordinator.swift */; };
+		2A747C942BD836CF00404182 /* ProfileCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C932BD836CF00404182 /* ProfileCoordinatorView.swift */; };
+		2A747C962BD836EB00404182 /* ProfileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C952BD836EB00404182 /* ProfileDestination.swift */; };
+		2A747C992BD8377700404182 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C982BD8377700404182 /* ProfileView.swift */; };
+		2A747C9B2BD837A000404182 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747C9A2BD837A000404182 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +149,11 @@
 		2A747C892BD82C5000404182 /* MessagesDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesDestination.swift; sourceTree = "<group>"; };
 		2A747C8C2BD82CD600404182 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		2A747C8E2BD82D0400404182 /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
+		2A747C912BD836B900404182 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		2A747C932BD836CF00404182 /* ProfileCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinatorView.swift; sourceTree = "<group>"; };
+		2A747C952BD836EB00404182 /* ProfileDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDestination.swift; sourceTree = "<group>"; };
+		2A747C982BD8377700404182 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2A747C9A2BD837A000404182 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +247,7 @@
 		2A291FF12BD13F2D0066DF03 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				2A747C902BD836A000404182 /* ProfileCoordinator */,
 				2A747C842BD82C0900404182 /* MessagesCoordinator */,
 				2A61A0FF2BD64F380039FC92 /* Coordinator.swift */,
 				2A61A11B2BD64FFD0039FC92 /* LoginCoordinator */,
@@ -261,6 +272,7 @@
 		2A291FF42BD13FEB0066DF03 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				2A747C972BD8376400404182 /* Profile */,
 				2A747C8B2BD82CC300404182 /* Messages */,
 				2A747C7F2BD82A5600404182 /* Jobs */,
 				2A747C732BD8060800404182 /* ForgotPassword */,
@@ -438,6 +450,25 @@
 			path = Messages;
 			sourceTree = "<group>";
 		};
+		2A747C902BD836A000404182 /* ProfileCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2A747C912BD836B900404182 /* ProfileCoordinator.swift */,
+				2A747C932BD836CF00404182 /* ProfileCoordinatorView.swift */,
+				2A747C952BD836EB00404182 /* ProfileDestination.swift */,
+			);
+			path = ProfileCoordinator;
+			sourceTree = "<group>";
+		};
+		2A747C972BD8376400404182 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2A747C982BD8377700404182 /* ProfileView.swift */,
+				2A747C9A2BD837A000404182 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -594,16 +625,21 @@
 				2A61A1152BD64FE00039FC92 /* HomeCoordinatorView.swift in Sources */,
 				2A747C772BD8077000404182 /* ForgotPasswordViewModel.swift in Sources */,
 				2A61A0F12BD64D0A0039FC92 /* SignInViewModel.swift in Sources */,
+				2A747C922BD836B900404182 /* ProfileCoordinator.swift in Sources */,
 				2A61A10A2BD64F830039FC92 /* TabBarCoordinator.swift in Sources */,
 				2A747C812BD82A6F00404182 /* JobsView.swift in Sources */,
 				2A747C7A2BD829C200404182 /* JobsCoordinator.swift in Sources */,
 				2A61A1272BD6D24E0039FC92 /* CornerRadius.swift in Sources */,
+				2A747C992BD8377700404182 /* ProfileView.swift in Sources */,
 				2A61A0F32BD64D1A0039FC92 /* HomeViewModel.swift in Sources */,
+				2A747C962BD836EB00404182 /* ProfileDestination.swift in Sources */,
 				2A62232A2BD6F07900828BB9 /* SignInView.swift in Sources */,
 				2A61A1102BD64FD20039FC92 /* AppDestination.swift in Sources */,
+				2A747C9B2BD837A000404182 /* ProfileViewModel.swift in Sources */,
 				2A61A1002BD64F380039FC92 /* Coordinator.swift in Sources */,
 				2A61A1212BD650300039FC92 /* LoginCoordinatorView.swift in Sources */,
 				2A61A1202BD650300039FC92 /* LoginCoordinator.swift in Sources */,
+				2A747C942BD836CF00404182 /* ProfileCoordinatorView.swift in Sources */,
 				2A330F552BD708640046C7DE /* SignUpViewModel.swift in Sources */,
 				2A747C8A2BD82C5000404182 /* MessagesDestination.swift in Sources */,
 				2A26677C2B9CD211005BAF19 /* ContentView.swift in Sources */,

@@ -24,7 +24,7 @@ enum TabBarDestination: Identifiable {
     case home(coordinator: HomeCoordinator)
     case jobs(coordinator: JobsCoordinator)
     case messages(coordinator: MessagesCoordinator)
-    case profile(coordinator: HomeCoordinator)
+    case profile(coordinator: ProfileCoordinator)
     
     var icon: String {
         switch self {

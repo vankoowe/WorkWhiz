@@ -27,12 +27,15 @@ final class TabBarCoordinator: Coordinator, ObservableObject {
         return MessagesCoordinator()
     }()
 
+    private lazy var profileCoordinator: ProfileCoordinator = {
+        return ProfileCoordinator()
+    }()
 
     init() {
         destinations = [TabBarDestination.home(coordinator: homeCoordinator),
                         TabBarDestination.jobs(coordinator: jobsCoordinator),
                         TabBarDestination.messages(coordinator: messagesCoordinator),
-                        TabBarDestination.profile(coordinator: homeCoordinator)]
+                        TabBarDestination.profile(coordinator: profileCoordinator)]
 
         selectedDestination = destinations.first
     }
