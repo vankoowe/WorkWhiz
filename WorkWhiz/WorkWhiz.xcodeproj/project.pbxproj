@@ -73,6 +73,8 @@
 		2A747CA12BD8590800404182 /* SectionTitleWithSeeAllButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CA02BD8590800404182 /* SectionTitleWithSeeAllButtonView.swift */; };
 		2A747CA32BD8599B00404182 /* PopularServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CA22BD8599B00404182 /* PopularServicesView.swift */; };
 		2A747CA52BD859D400404182 /* NewOnWorkWhizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CA42BD859D400404182 /* NewOnWorkWhizView.swift */; };
+		2A747CA72BD85EFA00404182 /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CA62BD85EFA00404182 /* SettingsItem.swift */; };
+		2A747CA92BD8637000404182 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CA82BD8637000404182 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +164,8 @@
 		2A747CA02BD8590800404182 /* SectionTitleWithSeeAllButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleWithSeeAllButtonView.swift; sourceTree = "<group>"; };
 		2A747CA22BD8599B00404182 /* PopularServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularServicesView.swift; sourceTree = "<group>"; };
 		2A747CA42BD859D400404182 /* NewOnWorkWhizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOnWorkWhizView.swift; sourceTree = "<group>"; };
+		2A747CA62BD85EFA00404182 /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsItem.swift; path = ../../../../../../../SettingsItem.swift; sourceTree = "<group>"; };
+		2A747CA82BD8637000404182 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -475,6 +479,8 @@
 			children = (
 				2A747C982BD8377700404182 /* ProfileView.swift */,
 				2A747C9A2BD837A000404182 /* ProfileViewModel.swift */,
+				2A747CA62BD85EFA00404182 /* SettingsItem.swift */,
+				2A747CA82BD8637000404182 /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -682,6 +688,7 @@
 				2A61A10C2BD64FB90039FC92 /* AppCoordinator.swift in Sources */,
 				2A61A0FC2BD64EE50039FC92 /* AppTheme.swift in Sources */,
 				2A61A1062BD64F6A0039FC92 /* TabBarDestination.swift in Sources */,
+				2A747CA92BD8637000404182 /* ProfileHeaderView.swift in Sources */,
 				2A61A1082BD64F740039FC92 /* TabBarCoordinatorView.swift in Sources */,
 				2A747C882BD82C3700404182 /* MessagesCoordinatorView.swift in Sources */,
 				2A747C832BD82A9500404182 /* JobsViewModel.swift in Sources */,
@@ -689,6 +696,7 @@
 				2A747C752BD8067000404182 /* ForgotPasswordView.swift in Sources */,
 				2A61A1162BD64FE00039FC92 /* HomeCoordinator.swift in Sources */,
 				2A747C9E2BD858A700404182 /* RecentlyViewedView.swift in Sources */,
+				2A747CA72BD85EFA00404182 /* SettingsItem.swift in Sources */,
 				2A6223252BD6E24800828BB9 /* CustomButton.swift in Sources */,
 				2A61A10E2BD64FC90039FC92 /* AppCoordinatorView.swift in Sources */,
 				2A61A0F52BD64D840039FC92 /* HomeView.swift in Sources */,
