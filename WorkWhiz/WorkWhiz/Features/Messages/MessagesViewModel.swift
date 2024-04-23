@@ -8,5 +8,8 @@
 import Foundation
 
 class MessagesViewModel: ObservableObject {
-    
+    func handleEditButtonTap() {
+        print("Did tap edit button")
+    }
+
 }
