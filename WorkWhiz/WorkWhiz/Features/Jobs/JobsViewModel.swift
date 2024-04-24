@@ -8,5 +8,5 @@
 import Foundation
 
 class JobsViewModel: ObservableObject {
-    
+    var navigationToDetailJob: ((Job, Bool) -> Void)?
 }
