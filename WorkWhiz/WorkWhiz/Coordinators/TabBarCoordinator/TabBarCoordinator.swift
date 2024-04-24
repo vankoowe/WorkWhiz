@@ -14,6 +14,8 @@ final class TabBarCoordinator: Coordinator, ObservableObject {
     @State var selectedDestination: TabBarDestination?
     @Published var destinations: [TabBarDestination] = []
 
+    @MainActor
+    var handleLogout: (Event)?
 
     private lazy var homeCoordinator: HomeCoordinator = {
         return HomeCoordinator()
@@ -28,7 +30,12 @@ final class TabBarCoordinator: Coordinator, ObservableObject {
     }()
 
     private lazy var profileCoordinator: ProfileCoordinator = {
-        return ProfileCoordinator()
+        return ProfileCoordinator(handleLogout: { [weak self] in
+            guard let self = self else { return }
+            Task { @MainActor in
+                self.handleLogout?()
+            }
+        })
     }()
 
     init() {

@@ -21,7 +21,17 @@ class AppCoordinator: Coordinator, ObservableObject {
         self.communicationManager = communicationManager
 
         if KeychainSwift().authToken != nil {
-            appState = .tabBar(TabBarCoordinator())
+            let coordinator = TabBarCoordinator()
+
+            appState = .tabBar(coordinator)
+
+            Task {
+                await MainActor.run {
+                    coordinator.handleLogout = {
+                        self.handleLogout(communication: communicationManager)
+                    }
+                }
+            }
         } else {
             let coordinator = LoginCoordinator(communication: communicationManager)
 
@@ -39,5 +49,11 @@ class AppCoordinator: Coordinator, ObservableObject {
     
     func handleLoginSuccess() {
         appState = .tabBar(TabBarCoordinator())
+    }
+
+    func handleLogout(communication: Communication) {
+        let coordinator = LoginCoordinator(communication: communicationManager)
+
+        appState = .login(coordinator)
     }
 }

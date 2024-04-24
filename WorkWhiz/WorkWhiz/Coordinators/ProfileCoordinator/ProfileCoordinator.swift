@@ -13,11 +13,22 @@ class ProfileCoordinator: Coordinator, ObservableObject {
     @Published var path = [ProfileDestination]()
     
     var initialDestination: ProfileDestination
-    
-    init() {
+
+    @MainActor
+    var handleLogout: (Event)?
+
+    init(handleLogout: (Event)?) {
+        self.handleLogout = handleLogout
+
         let profileViewModel = ProfileViewModel()
 
         initialDestination = .profile(viewModel: profileViewModel)
+
+        Task { @MainActor in
+            profileViewModel.handleLogout = { [weak self] in
+                self?.handleLogout?()
+            }
+        }
     }
     
     @ViewBuilder

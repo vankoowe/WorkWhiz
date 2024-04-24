@@ -57,6 +57,23 @@ struct ProfileView: View {
                         }
                         .frame(height: 40)
                     }
+
+                    Button {
+                        viewModel.logout()
+                    } label: {
+                        HStack(spacing: theme.spacingTokens.spacing.spacing20) {
+                            Image(systemName: "delete.backward")
+                                .renderingMode(.template)
+                                .foregroundStyle(Color.gray.opacity(0.5))
+
+                            Text("Logout")
+                                .font(Font.sourceSansPro(.semibold, size: 18))
+                                .foregroundStyle(theme.colorTheme.text.black.opacity(0.5))
+
+                            Spacer()
+                        }
+                    }
+                    .frame(height: 40)
                 }
             }
             .listStyle(.plain)
