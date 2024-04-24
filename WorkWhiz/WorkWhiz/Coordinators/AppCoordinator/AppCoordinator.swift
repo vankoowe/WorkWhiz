@@ -37,8 +37,12 @@ class AppCoordinator: Coordinator, ObservableObject {
 
             appState = .login(coordinator)
 
-            Task { @MainActor in
-                coordinator.successfulLogin = handleLoginSuccess
+            Task {
+                await MainActor.run {
+                    coordinator.successfulLogin = {
+                        self.handleLoginSuccess(communication: communicationManager)
+                    }
+                }
             }
         }
     }
@@ -47,13 +51,31 @@ class AppCoordinator: Coordinator, ObservableObject {
         AnyView(AppCoordinatorView(coordinator: self))
     }
     
-    func handleLoginSuccess() {
-        appState = .tabBar(TabBarCoordinator())
+    func handleLoginSuccess(communication: Communication) {
+        let coordinator = TabBarCoordinator()
+
+        appState = .tabBar(coordinator)
+
+        Task {
+            await MainActor.run {
+                coordinator.handleLogout = {
+                    self.handleLogout(communication: communication)
+                }
+            }
+        }
     }
 
     func handleLogout(communication: Communication) {
         let coordinator = LoginCoordinator(communication: communicationManager)
 
         appState = .login(coordinator)
+
+        Task {
+            await MainActor.run {
+                coordinator.successfulLogin = {
+                    self.handleLoginSuccess(communication: communication)
+                }
+            }
+        }
     }
 }

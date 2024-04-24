@@ -7,7 +7,6 @@
 
 import Foundation
 import Alamofire
-//import UIKit
 
 class CommunicationManager {
     private class var label: String {
