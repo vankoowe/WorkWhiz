@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import KeychainSwift
 
 enum PasswordStrength {
     case veryWeak
@@ -15,6 +16,8 @@ enum PasswordStrength {
     case strong
     case veryStrong
 }
+
+typealias SignUpViewModelCommunication = SignUpCommunication & SignInCommunication
 
 class SignUpViewModel: ObservableObject {
     @Published var email = ""
@@ -26,8 +29,13 @@ class SignUpViewModel: ObservableObject {
     @Published var usernameMessage = ""
     @Published var passwordMessage = ""
 
+    @Published var didFailSignUpAndSignIn: Bool = false
+    @Published var isLoading: Bool = false
+
+    let communication: SignUpViewModelCommunication
+
     @MainActor
-    var successfulRegister: Event?
+    var successfulLoginAndRegister: Event?
 
     var signInSelected: Event?
     var goBack: Event
@@ -61,6 +69,10 @@ class SignUpViewModel: ObservableObject {
                 password == confirmPassword
             }
             .eraseToAnyPublisher()
+    }
+
+    func disabledSignUp() -> Bool {
+        return userName.isEmpty || email.isEmpty || password != confirmPassword || password.isEmpty
     }
 
     private func calculatePasswordStrength(_ password: String) -> PasswordStrength {
@@ -123,7 +135,32 @@ class SignUpViewModel: ObservableObject {
             .eraseToAnyPublisher()
     }
 
-    init(goBack: @escaping Event) {
+    func signUp() {
+        isLoading = true
+
+        Task { @MainActor in
+            do {
+                let _ = try await communication.signUp(email: email,
+                                                                    name: userName,
+                                                                    password: password)
+
+                let loginResponse = try await communication.signIn(email: email,
+                                                                   password: password)
+
+                KeychainSwift().authToken = SignInResponse(accessToken: loginResponse.accessToken)
+
+                successfulLoginAndRegister?()
+            } catch {
+                didFailSignUpAndSignIn = true
+            }
+
+            isLoading = false
+        }
+    }
+
+
+    init(communication: SignUpViewModelCommunication, goBack: @escaping Event) {
+        self.communication = communication
         self.goBack = goBack
 
         isUsernameValidPublisher

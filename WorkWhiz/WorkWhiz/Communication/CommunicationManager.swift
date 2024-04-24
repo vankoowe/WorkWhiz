@@ -124,7 +124,7 @@ extension CommunicationManager: SignInCommunication {
         let endpoint = Constants.RequestEndpoint.signIn
         let parameters: Parameters = ["email": email,
                                       "password": password]
-        
+
         return try await execute(Request(endpoint,
                                          headers: defaultHeaders,
                                          encoding: JSONEncoding.default,
@@ -133,12 +133,12 @@ extension CommunicationManager: SignInCommunication {
 }
 
 extension CommunicationManager: SignUpCommunication {
-    func signUp(email: String, username: String, password: String) async throws -> SignUpResponse {
-        let endpoint = Constants.RequestEndpoint.signIn
+    func signUp(email: String, name: String, password: String) async throws -> SignUpResponse {
+        let endpoint = Constants.RequestEndpoint.signUp
         let parameters: Parameters = ["email": email,
-                                      "username": username,
+                                      "name": name,
                                       "password": password]
-        
+
         return try await execute(Request(endpoint,
                                          headers: defaultHeaders,
                                          encoding: JSONEncoding.default,

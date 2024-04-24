@@ -33,13 +33,25 @@ struct SignInView: View {
 
                             resetPassword
 
-                            CustomButton(type: .defaultButton,
-                                         font: .bold,
-                                         fontSize: 18,
-                                         title: "Sign In") {
+                            Button {
                                 viewModel.login()
-                                // TODO: Implement logic
+                            } label: {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: theme.spacingTokens.cornerRadius.cornerRadius12)
+                                        .foregroundStyle(viewModel.disabledSignIn() ? LinearGradient(
+                                            gradient: Gradient(colors: [Color.gray, Color.gray]),
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        ) : theme.colorTheme.primary.gradient)
+
+                                    Text("Sign In")
+                                        .font(Font.sourceSansPro(.bold, size: 18))
+                                        .foregroundStyle(theme.colorTheme.text.white)
+                                }
                             }
+                            .frame(maxWidth: .infinity, maxHeight: theme.spacingTokens.padding.padding48)
+                            .disabled(viewModel.disabledSignIn())
+                            .cornerRadius(theme.spacingTokens.cornerRadius.cornerRadius12)
                             .frame(height: 50)
 
                             createAccount
@@ -292,6 +304,7 @@ struct SignInView: View {
         }
         return title
     }
+
 }
 
 extension SignInView {

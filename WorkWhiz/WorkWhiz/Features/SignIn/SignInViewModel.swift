@@ -52,4 +52,8 @@ class SignInViewModel: ObservableObject {
         }
     }
 
+    func disabledSignIn() -> Bool {
+        return email.isEmpty || password.isEmpty
+    }
+
 }

@@ -30,12 +30,25 @@ struct ForgotPasswordView: View {
 
                 resetPassword
 
-                CustomButton(type: .defaultButton,
-                             font: .bold,
-                             fontSize: 18,
-                             title: "Request Reset Link") {
+                Button {
                     // TODO: Implement request for forgot password
+                } label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: theme.spacingTokens.cornerRadius.cornerRadius12)
+                            .foregroundStyle(viewModel.email.isEmpty ? LinearGradient(
+                                gradient: Gradient(colors: [Color.gray, Color.gray]),
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            ) : theme.colorTheme.primary.gradient)
+
+                        Text("Request Reset Link")
+                            .font(Font.sourceSansPro(.bold, size: 18))
+                            .foregroundStyle(theme.colorTheme.text.white)
+                    }
                 }
+                .frame(maxWidth: .infinity, maxHeight: theme.spacingTokens.padding.padding48)
+                .disabled(viewModel.email.isEmpty)
+                .cornerRadius(theme.spacingTokens.cornerRadius.cornerRadius12)
                 .frame(height: 50)
             }
             .padding(.horizontal, theme.spacingTokens.padding.padding20)
