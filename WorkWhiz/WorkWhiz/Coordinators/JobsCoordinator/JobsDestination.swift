@@ -9,6 +9,7 @@ import SwiftUI
 
 enum JobsDestination {
     case jobs(viewModel: JobsViewModel)
+    case jobDetail(viewModel: JobDetailViewModel)
 }
 
 extension JobsDestination: Hashable {
@@ -20,6 +21,10 @@ extension JobsDestination: Hashable {
         switch (lhs, rhs) {
         case let (.jobs(lhsVM), .jobs(rhsVM)):
             return lhsVM === rhsVM
+        case let (.jobDetail(lhsVM), .jobDetail(rhsVM)):
+            return lhsVM === rhsVM
+        default:
+            return false
         }
     }
 }
@@ -29,6 +34,8 @@ extension JobsDestination: View {
         switch self {
         case let .jobs(viewModel):
             JobsView(viewModel: viewModel)
+        case let .jobDetail(viewModel):
+            JobDetail(viewModel: viewModel)
         }
     }
 }

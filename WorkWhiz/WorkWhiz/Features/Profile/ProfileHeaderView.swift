@@ -17,7 +17,7 @@ struct ProfileHeaderView: View {
 
     var body: some View {
         VStack {
-            HStack(spacing: 12) {
+            HStack(spacing: theme.spacingTokens.spacing.spacing12) {
                 Image("mockImage")
                     .resizable()
                     .scaledToFill()

@@ -62,7 +62,7 @@ struct RecentlyViewedView: View {
                         }
                         .padding(.horizontal, theme.spacingTokens.padding.padding12)
 
-                        HStack(spacing: 1) {
+                        HStack(spacing: theme.spacingTokens.spacing.spacing4) {
                             Image(systemName: "star.fill")
                             Text("4.9")
 
@@ -91,7 +91,7 @@ struct RecentlyViewedView: View {
 
                     .background(Color.white)
                     .frame(width: 250, height: 280)
-                    .cornerRadius(8)
+                    .cornerRadius(theme.spacingTokens.cornerRadius.cornerRadius8)
                     .shadow(color: Color(.systemGray3).opacity(0.5), radius: 5, x: 0, y: 2)
                 }
             }
