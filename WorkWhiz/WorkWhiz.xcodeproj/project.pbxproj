@@ -75,6 +75,12 @@
 		2A747CA52BD859D400404182 /* NewOnWorkWhizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CA42BD859D400404182 /* NewOnWorkWhizView.swift */; };
 		2A747CA72BD85EFA00404182 /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CA62BD85EFA00404182 /* SettingsItem.swift */; };
 		2A747CA92BD8637000404182 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CA82BD8637000404182 /* ProfileHeaderView.swift */; };
+		2A747CB02BD93ECF00404182 /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CAB2BD93ECF00404182 /* CommunicationManager.swift */; };
+		2A747CB22BD93ECF00404182 /* OAuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CAD2BD93ECF00404182 /* OAuthAdapter.swift */; };
+		2A747CB32BD93ECF00404182 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CAE2BD93ECF00404182 /* Communication.swift */; };
+		2A747CB42BD93ECF00404182 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CAF2BD93ECF00404182 /* URLConstants.swift */; };
+		2A747CB82BD93F9100404182 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2A747CB72BD93F9100404182 /* Alamofire */; };
+		2A747CBA2BD9431200404182 /* KeychainSwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CB92BD9431200404182 /* KeychainSwiftExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +172,11 @@
 		2A747CA42BD859D400404182 /* NewOnWorkWhizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOnWorkWhizView.swift; sourceTree = "<group>"; };
 		2A747CA62BD85EFA00404182 /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsItem.swift; path = ../../../../../../../SettingsItem.swift; sourceTree = "<group>"; };
 		2A747CA82BD8637000404182 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		2A747CAB2BD93ECF00404182 /* CommunicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationManager.swift; sourceTree = "<group>"; };
+		2A747CAD2BD93ECF00404182 /* OAuthAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthAdapter.swift; sourceTree = "<group>"; };
+		2A747CAE2BD93ECF00404182 /* Communication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
+		2A747CAF2BD93ECF00404182 /* URLConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
+		2A747CB92BD9431200404182 /* KeychainSwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainSwiftExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A291FFE2BD142DB0066DF03 /* KeychainSwift in Frameworks */,
+				2A747CB82BD93F9100404182 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +213,7 @@
 				2A2667892B9CD212005BAF19 /* WorkWhizTests */,
 				2A2667932B9CD212005BAF19 /* WorkWhizUITests */,
 				2A2667772B9CD211005BAF19 /* Products */,
+				2A747CB62BD93F9100404182 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +230,7 @@
 		2A2667782B9CD211005BAF19 /* WorkWhiz */ = {
 			isa = PBXGroup;
 			children = (
+				2A747CAA2BD93ECF00404182 /* Communication */,
 				2A6223262BD6E6D800828BB9 /* Info.plist */,
 				2A291FF42BD13FEB0066DF03 /* Features */,
 				2A61A0F62BD64DDA0039FC92 /* Modifiers */,
@@ -338,6 +352,7 @@
 				2A61A0F92BD64E680039FC92 /* FontExtensions.swift */,
 				2A6223272BD6EF1300828BB9 /* Typealiases.swift */,
 				2A61A0F72BD64E0F0039FC92 /* ColorExtension.swift */,
+				2A747CB92BD9431200404182 /* KeychainSwiftExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -503,6 +518,24 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		2A747CAA2BD93ECF00404182 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				2A747CAB2BD93ECF00404182 /* CommunicationManager.swift */,
+				2A747CAD2BD93ECF00404182 /* OAuthAdapter.swift */,
+				2A747CAE2BD93ECF00404182 /* Communication.swift */,
+				2A747CAF2BD93ECF00404182 /* URLConstants.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		2A747CB62BD93F9100404182 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -521,6 +554,7 @@
 			name = WorkWhiz;
 			packageProductDependencies = (
 				2A291FFD2BD142DB0066DF03 /* KeychainSwift */,
+				2A747CB72BD93F9100404182 /* Alamofire */,
 			);
 			productName = WorkWhiz;
 			productReference = 2A2667762B9CD211005BAF19 /* WorkWhiz.app */;
@@ -596,6 +630,7 @@
 			mainGroup = 2A26676D2B9CD211005BAF19;
 			packageReferences = (
 				2A291FFC2BD142DB0066DF03 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				2A747CB52BD93F1E00404182 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 2A2667772B9CD211005BAF19 /* Products */;
 			projectDirPath = "";
@@ -671,6 +706,8 @@
 				2A747C962BD836EB00404182 /* ProfileDestination.swift in Sources */,
 				2A62232A2BD6F07900828BB9 /* SignInView.swift in Sources */,
 				2A61A1102BD64FD20039FC92 /* AppDestination.swift in Sources */,
+				2A747CB32BD93ECF00404182 /* Communication.swift in Sources */,
+				2A747CBA2BD9431200404182 /* KeychainSwiftExtensions.swift in Sources */,
 				2A747C9B2BD837A000404182 /* ProfileViewModel.swift in Sources */,
 				2A61A1002BD64F380039FC92 /* Coordinator.swift in Sources */,
 				2A61A1212BD650300039FC92 /* LoginCoordinatorView.swift in Sources */,
@@ -690,10 +727,12 @@
 				2A61A1062BD64F6A0039FC92 /* TabBarDestination.swift in Sources */,
 				2A747CA92BD8637000404182 /* ProfileHeaderView.swift in Sources */,
 				2A61A1082BD64F740039FC92 /* TabBarCoordinatorView.swift in Sources */,
+				2A747CB42BD93ECF00404182 /* URLConstants.swift in Sources */,
 				2A747C882BD82C3700404182 /* MessagesCoordinatorView.swift in Sources */,
 				2A747C832BD82A9500404182 /* JobsViewModel.swift in Sources */,
 				2A747C7C2BD829DD00404182 /* JobsCoordinatorView.swift in Sources */,
 				2A747C752BD8067000404182 /* ForgotPasswordView.swift in Sources */,
+				2A747CB02BD93ECF00404182 /* CommunicationManager.swift in Sources */,
 				2A61A1162BD64FE00039FC92 /* HomeCoordinator.swift in Sources */,
 				2A747C9E2BD858A700404182 /* RecentlyViewedView.swift in Sources */,
 				2A747CA72BD85EFA00404182 /* SettingsItem.swift in Sources */,
@@ -701,6 +740,7 @@
 				2A61A10E2BD64FC90039FC92 /* AppCoordinatorView.swift in Sources */,
 				2A61A0F52BD64D840039FC92 /* HomeView.swift in Sources */,
 				2A61A0FA2BD64E680039FC92 /* FontExtensions.swift in Sources */,
+				2A747CB22BD93ECF00404182 /* OAuthAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1042,6 +1082,14 @@
 				minimumVersion = 22.0.0;
 			};
 		};
+		2A747CB52BD93F1E00404182 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1049,6 +1097,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2A291FFC2BD142DB0066DF03 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		2A747CB72BD93F9100404182 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A747CB52BD93F1E00404182 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
