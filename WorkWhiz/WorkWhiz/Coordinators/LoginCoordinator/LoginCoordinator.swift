@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-typealias LoginCoordinatorCommunication = SignInCommunication
+typealias LoginCoordinatorCommunication = SignInCommunication & SignUpCommunication
 
 final class LoginCoordinator: Coordinator, ObservableObject {
     var childCoordinators = [Coordinator]()
@@ -43,12 +43,18 @@ final class LoginCoordinator: Coordinator, ObservableObject {
     }
 
     func signUpSelected() {
-        let signUpViewModel = SignUpViewModel(goBack: { [weak self] in
+        let signUpViewModel = SignUpViewModel(communication: communication, goBack: { [weak self] in
             self?.path.removeLast()
         })
 
         signUpViewModel.signInSelected = {
             self.signInSelected()
+        }
+
+        Task { @MainActor in
+            signUpViewModel.successfulLoginAndRegister = { [weak self] in
+                self?.successfulLogin?()
+            }
         }
 
         path.append(.signUp(viewModel: signUpViewModel))

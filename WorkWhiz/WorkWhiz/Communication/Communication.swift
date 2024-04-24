@@ -12,5 +12,5 @@ protocol SignInCommunication {
 }
 
 protocol SignUpCommunication {
-    func signUp(email: String, username: String, password: String) async throws -> SignUpResponse
+    func signUp(email: String, name: String, password: String) async throws -> SignUpResponse
 }

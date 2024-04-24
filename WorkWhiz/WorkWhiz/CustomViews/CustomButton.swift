@@ -10,6 +10,7 @@ import SwiftUI
 struct CustomButton<Content: View>: View {
     @EnvironmentObject var theme: AppTheme
     let type: ButtonStyles
+    var disabled: Bool?
     let action: () -> Void
     var font: Font.SourceSansProFont
     var fontSize: CGFloat
@@ -21,30 +22,50 @@ struct CustomButton<Content: View>: View {
     }
 
     init(type: ButtonStyles,
+         disabled: Bool? = false,
          font: Font.SourceSansProFont,
          fontSize: CGFloat,
          action: @escaping () -> Void,
          @ViewBuilder label: @escaping () -> Content) {
         self.type = type
+        self.disabled = disabled
         self.font = font
         self.fontSize = fontSize
         self.action = action
         self.label = label
     }
 
-    init(type: ButtonStyles, 
+    init(type: ButtonStyles,
+         disabled: Bool? = false,
          font: Font.SourceSansProFont,
          fontSize: CGFloat,
          title: String,
          action: @escaping () -> Void) where Content == Text {
-        self.init(type: type, font: font, fontSize: fontSize, action: action, label: { Text(title) })
+        self.init(type: type, disabled: disabled, font: font, fontSize: fontSize, action: action, label: { Text(title) })
     }
     
     var body: some View {
         switch type {
         case .defaultButton:
-            Button(action: self.action, label: self.label)
-                .buttonStyle(DefaultButtonStyle(theme: theme, font: font, fontSize: fontSize))
+            Button {
+                self.action()
+            } label: {
+                ZStack {
+                    RoundedRectangle(cornerRadius: theme.spacingTokens.cornerRadius.cornerRadius12)
+                        .foregroundStyle(disabled ?? false ? LinearGradient(
+                            gradient: Gradient(colors: [Color.gray, Color.gray]),
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        ) : theme.colorTheme.primary.gradient)
+
+                    self.label()
+                }
+                
+            }
+            .frame(maxWidth: .infinity, maxHeight: theme.spacingTokens.padding.padding48)
+            .cornerRadius(theme.spacingTokens.cornerRadius.cornerRadius12)
+            .disabled(disabled ?? false ? true : false)
+            .buttonStyle(DefaultButtonStyle(theme: theme, font: font, fontSize: fontSize, disabled: disabled))
         }
     }
 }
@@ -53,16 +74,13 @@ struct DefaultButtonStyle: ButtonStyle {
     var theme: AppTheme
     var font: Font.SourceSansProFont
     var fontSize: CGFloat
+    var disabled: Bool?
 
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .font(Font.sourceSansPro(font, size: fontSize))
-            .frame(maxWidth: .infinity, maxHeight: theme.spacingTokens.padding.padding48)
             .foregroundStyle(theme.colorTheme.text.white)
-            .background(theme.colorTheme.primary.gradient)
             .contentShape(Rectangle())
-            .background(theme.colorTheme.text.primary)
-            .cornerRadius(theme.spacingTokens.cornerRadius.cornerRadius12)
     }
 }
 

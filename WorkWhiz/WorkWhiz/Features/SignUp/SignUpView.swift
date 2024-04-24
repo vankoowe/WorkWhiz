@@ -15,40 +15,56 @@ struct SignUpView: View {
 
     // MARK: - View
     var body: some View {
-        GeometryReader { geometry in
-            ScrollView {
-                ZStack {
-                    Color.white
-                        .onTapGesture {
-                            hideKeyboard()
+        LoadingView(isShowing: $viewModel.isLoading, loadingText: "Sign Up Loading...") {
+            GeometryReader { geometry in
+                ScrollView {
+                    ZStack {
+                        Color.white
+                            .onTapGesture {
+                                hideKeyboard()
+                            }
+                        
+                        VStack(spacing: theme.spacingTokens.spacing.spacing20) {
+                            VStack(spacing: theme.spacingTokens.spacing.spacing40) {
+                                header
+                                
+                                fields
+                            }
+
+                            Button {
+                                viewModel.signUp()
+                            } label: {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: theme.spacingTokens.cornerRadius.cornerRadius12)
+                                        .foregroundStyle(viewModel.disabledSignUp() ? LinearGradient(
+                                            gradient: Gradient(colors: [Color.gray, Color.gray]),
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        ) : theme.colorTheme.primary.gradient)
+
+                                    Text("Sign Up")
+                                        .font(Font.sourceSansPro(.bold, size: 18))
+                                        .foregroundStyle(theme.colorTheme.text.white)
+                                }
+                            }
+                            .frame(maxWidth: .infinity, maxHeight: theme.spacingTokens.padding.padding48)
+                            .disabled(viewModel.disabledSignUp())
+                            .cornerRadius(theme.spacingTokens.cornerRadius.cornerRadius12)
+                            .frame(height: 50)
+                            
+                            createAccount
+                            
+                            socialLoginsView
                         }
-
-                    VStack(spacing: theme.spacingTokens.spacing.spacing20) {
-                        VStack(spacing: theme.spacingTokens.spacing.spacing40) {
-                            header
-
-                            fields
-                        }
-
-                        CustomButton(type: .defaultButton,
-                                     font: .bold,
-                                     fontSize: 18,
-                                     title: "Sign Up") {
-                            // TODO: Implement logic
-                        }
-                        .frame(height: 50)
-
-                        createAccount
-
-                        socialLoginsView
+                        .padding(.horizontal, theme.spacingTokens.padding.padding20)
+                        .frame(width: geometry.size.width)
+                        .frame(minHeight: geometry.size.height)
                     }
-                    .padding(.horizontal, theme.spacingTokens.padding.padding20)
-                    .frame(width: geometry.size.width)
-                    .frame(minHeight: geometry.size.height)
                 }
             }
+            .overlay(backButton, alignment: .topLeading)
+
         }
-        .overlay(backButton, alignment: .topLeading)
         .scrollIndicators(.hidden)
         .navigationBarBackButtonHidden(true)
         .environmentObject(theme)
@@ -131,6 +147,8 @@ struct SignUpView: View {
                 .foregroundStyle(theme.colorTheme.background.black)
 
             TextField("Email", text: $viewModel.email)
+                .autocapitalization(.none)
+                .autocorrectionDisabled()
                 .keyboardType(.emailAddress)
                 .font(Font.sourceSansPro(.regular, size: 16))
                 .foregroundStyle(theme.colorTheme.text.black)
@@ -168,6 +186,8 @@ struct SignUpView: View {
                 .foregroundStyle(theme.colorTheme.background.black)
 
             TextField("Username", text: $viewModel.userName)
+                .autocapitalization(.none)
+                .autocorrectionDisabled()
                 .font(Font.sourceSansPro(.regular, size: 16))
                 .foregroundStyle(theme.colorTheme.text.black)
                 .padding()
@@ -378,6 +398,6 @@ extension SignUpView {
 }
 
 #Preview {
-    SignUpView(viewModel: SignUpViewModel(goBack: {}))
+    SignUpView(viewModel: SignUpViewModel(communication: CommunicationManager(), goBack: {}))
         .environmentObject(AppTheme())
 }
