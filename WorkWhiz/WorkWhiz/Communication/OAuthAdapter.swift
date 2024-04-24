@@ -1,8 +1,8 @@
 //
 //  OAuthAdapter.swift
-//  GymOffice
+//  WorkWhiz
 //
-//  Created by Stanislav Dinev on 14.03.24.
+//  Created by Ivan Gamov on 24.04.24.
 //
 
 import Foundation

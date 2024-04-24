@@ -1,8 +1,8 @@
 //
 //  Communication.swift
-//  GymOffice
+//  WorkWhiz
 //
-//  Created by Kristina Simova on 26.03.24.
+//  Created by Ivan Gamov on 24.04.24.
 //
 
 import Foundation
