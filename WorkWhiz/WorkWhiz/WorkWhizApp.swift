@@ -13,7 +13,9 @@ struct WorkWhizApp: App {
     @StateObject var theme = AppTheme()
 
     init() {
-        _appCoordinator = StateObject(wrappedValue: AppCoordinator())
+        let oathAdapter = OAuthAdapter()
+        _appCoordinator = StateObject(wrappedValue: AppCoordinator(
+            communicationManager: CommunicationManager(requestAdapter: oathAdapter, requestRetrier: oathAdapter)))
     }
 
     var body: some Scene {

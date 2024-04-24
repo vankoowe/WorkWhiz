@@ -7,17 +7,23 @@
 
 import SwiftUI
 
+typealias LoginCoordinatorCommunication = SignInCommunication
+
 final class LoginCoordinator: Coordinator, ObservableObject {
     var childCoordinators = [Coordinator]()
 
     @Published var path = [LoginDestination]()
     var initialDestination: LoginDestination
 
+    var communication: LoginCoordinatorCommunication
+
     @MainActor
     var successfulLogin: (Event)?
 
-    init() {
-        let signInViewModel = SignInViewModel()
+    init(communication: LoginCoordinatorCommunication) {
+        self.communication = communication
+
+        let signInViewModel = SignInViewModel(communication: communication)
 
         initialDestination = .signIn(viewModel: signInViewModel)
 

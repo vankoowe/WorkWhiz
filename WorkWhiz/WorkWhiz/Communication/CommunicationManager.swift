@@ -153,6 +153,10 @@ struct SignUpResponse: Codable {
 
 struct SignInResponse: Codable {
     var accessToken: String
+
+    enum CodingKeys: String, CodingKey {
+        case accessToken = "access_token"
+    }
 }
 
 struct EmptyResponse: Codable { }
