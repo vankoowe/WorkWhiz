@@ -20,7 +20,17 @@ public struct ColorTheme {
 }
 
 public struct PrimaryColors {
-    public let primary = Color.green
+    public let primary = Color(hex: "#ea643f")
+    public let secondary = Color(hex: "#e1545d")
+    
+    public var gradient: LinearGradient {
+        return LinearGradient(
+            gradient: Gradient(colors: [primary, secondary]),
+            startPoint: .leading,
+            endPoint: .trailing
+        )
+    }
+    
     public let errorRed = Color.red
 }
 
@@ -34,7 +44,7 @@ public struct TextColors {
 
 public struct BackgroundColors {
     public let defaultBackground = Color(hex: "#000D30")
-    public let placeholder = Color(hex: "#0C356A")
+    public let placeholder = Color.gray
     public let secondaryBackground = Color(hex: "#0C1A42")
     public let black = Color.black
 }
@@ -50,9 +60,7 @@ public struct SpacingTokens {
 
     public struct Spacing {
         public let spacing0: CGFloat = 0
-        public let spacing2: CGFloat = 2
         public let spacing4: CGFloat = 4
-        public let spacing6: CGFloat = 6
         public let spacing8: CGFloat = 8
         public let spacing10: CGFloat = 10
         public let spacing12: CGFloat = 12
@@ -78,11 +86,8 @@ public struct SpacingTokens {
         public let padding28: CGFloat = 28
         public let padding32: CGFloat = 32
         public let padding40: CGFloat = 40
-        public let padding42: CGFloat = 42
         public let padding44: CGFloat = 44
-        public let padding46: CGFloat = 46
         public let padding48: CGFloat = 48
-        public let padding50: CGFloat = 50
         public let padding56: CGFloat = 56
         public let padding52: CGFloat = 52
         public let padding68: CGFloat = 68

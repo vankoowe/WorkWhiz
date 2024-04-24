@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import KeychainSwift
 
 @main
 struct WorkWhizApp: App {
@@ -13,7 +14,10 @@ struct WorkWhizApp: App {
     @StateObject var theme = AppTheme()
 
     init() {
-        _appCoordinator = StateObject(wrappedValue: AppCoordinator())
+        let oathAdapter = OAuthAdapter()
+        _appCoordinator = StateObject(wrappedValue: AppCoordinator(
+            communicationManager: CommunicationManager(requestAdapter: oathAdapter, requestRetrier: oathAdapter)))
+//        KeychainSwift().clear()
     }
 
     var body: some Scene {
