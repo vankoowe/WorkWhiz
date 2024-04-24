@@ -11,17 +11,11 @@ import KeychainSwift
 
 class OAuthAdapter: RequestInterceptor {
     typealias RequestRetryCompletion = (Alamofire.RetryResult) -> Void
-    var didLogout: Event?
 
     private let lock = NSLock()
-    private let keychain: KeychainSwift
     private var requestsToRetry: [RequestRetryCompletion] = []
     var authToken: SignInResponse? {
-        return keychain.authToken
-    }
-
-    init(keychain: KeychainSwift) {
-        self.keychain = keychain
+        return KeychainSwift().authToken
     }
 
     let session: Session = {

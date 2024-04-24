@@ -8,27 +8,29 @@
 import SwiftUI
 import KeychainSwift
 
+typealias Communication = SignInCommunication & SignUpCommunication
+
 class AppCoordinator: Coordinator, ObservableObject {
     var childCoordinators = [Coordinator]()
+    var communicationManager: Communication
 
     @Published var appState: AppDestination
     // TODO: Implement communication Manager for requests
 
-    init() {
-        
-//        let isUserLoggedIn = true
-        
-//        if isUserLoggedIn {
+    init(communicationManager: Communication) {
+        self.communicationManager = communicationManager
+
+        if KeychainSwift().authToken != nil {
             appState = .tabBar(TabBarCoordinator())
-//        } else {
-//            let coordinator = LoginCoordinator(communication: communicationManager)
-//            
-//            appState = .login(LoginCoordinator())
-//            
-//            Task { @MainActor in
-//                coordinator.successfulLogin = handleLoginSuccess
-//            }
-//        }
+        } else {
+            let coordinator = LoginCoordinator(communication: communicationManager)
+
+            appState = .login(coordinator)
+
+            Task { @MainActor in
+                coordinator.successfulLogin = handleLoginSuccess
+            }
+        }
     }
     
     func start() -> AnyView {

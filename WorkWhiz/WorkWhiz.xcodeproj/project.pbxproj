@@ -81,6 +81,7 @@
 		2A747CB42BD93ECF00404182 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CAF2BD93ECF00404182 /* URLConstants.swift */; };
 		2A747CB82BD93F9100404182 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2A747CB72BD93F9100404182 /* Alamofire */; };
 		2A747CBA2BD9431200404182 /* KeychainSwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CB92BD9431200404182 /* KeychainSwiftExtensions.swift */; };
+		2A747CBE2BD955D300404182 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A747CBD2BD955D300404182 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +178,7 @@
 		2A747CAE2BD93ECF00404182 /* Communication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
 		2A747CAF2BD93ECF00404182 /* URLConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
 		2A747CB92BD9431200404182 /* KeychainSwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainSwiftExtensions.swift; sourceTree = "<group>"; };
+		2A747CBD2BD955D300404182 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,6 +430,7 @@
 				2A747C9F2BD858DE00404182 /* Home */,
 				2A747C9C2BD8587E00404182 /* Jobs */,
 				2A6223242BD6E24800828BB9 /* CustomButton.swift */,
+				2A747CBD2BD955D300404182 /* LoadingView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -702,6 +705,7 @@
 				2A61A1272BD6D24E0039FC92 /* CornerRadius.swift in Sources */,
 				2A747C992BD8377700404182 /* ProfileView.swift in Sources */,
 				2A61A0F32BD64D1A0039FC92 /* HomeViewModel.swift in Sources */,
+				2A747CBE2BD955D300404182 /* LoadingView.swift in Sources */,
 				2A747CA12BD8590800404182 /* SectionTitleWithSeeAllButtonView.swift in Sources */,
 				2A747C962BD836EB00404182 /* ProfileDestination.swift in Sources */,
 				2A62232A2BD6F07900828BB9 /* SignInView.swift in Sources */,

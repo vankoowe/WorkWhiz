@@ -15,38 +15,41 @@ struct SignInView: View {
 
     // MARK: - View
     var body: some View {
-        GeometryReader { geometry in
-            ScrollView {
-                ZStack {
-                    Color.white
-                        .onTapGesture {
-                            hideKeyboard()
+        LoadingView(isShowing: $viewModel.isLoading, loadingText: "Sign In Loading...") {
+            GeometryReader { geometry in
+                ScrollView {
+                    ZStack {
+                        Color.white
+                            .onTapGesture {
+                                hideKeyboard()
+                            }
+
+                        VStack(spacing: theme.spacingTokens.spacing.spacing20) {
+                            VStack(spacing: theme.spacingTokens.spacing.spacing40) {
+                                header
+
+                                fields
+                            }
+
+                            resetPassword
+
+                            CustomButton(type: .defaultButton,
+                                         font: .bold,
+                                         fontSize: 18,
+                                         title: "Sign In") {
+                                viewModel.login()
+                                // TODO: Implement logic
+                            }
+                            .frame(height: 50)
+
+                            createAccount
+
+                            socialLoginsView
                         }
-
-                    VStack(spacing: theme.spacingTokens.spacing.spacing20) {
-                        VStack(spacing: theme.spacingTokens.spacing.spacing40) {
-                            header
-
-                            fields
-                        }
-
-                        resetPassword
-
-                        CustomButton(type: .defaultButton,
-                                     font: .bold,
-                                     fontSize: 18,
-                                     title: "Sign In") {
-                            // TODO: Implement logic
-                        }
-                        .frame(height: 50)
-
-                        createAccount
-
-                        socialLoginsView
+                        .padding(.horizontal, theme.spacingTokens.padding.padding20)
+                        .frame(width: geometry.size.width)
+                        .frame(minHeight: geometry.size.height)
                     }
-                    .padding(.horizontal, theme.spacingTokens.padding.padding20)
-                    .frame(width: geometry.size.width)
-                    .frame(minHeight: geometry.size.height)
                 }
             }
         }
@@ -106,6 +109,8 @@ struct SignInView: View {
                 .foregroundStyle(theme.colorTheme.background.black)
 
             TextField("Email", text: $viewModel.email)
+                .autocorrectionDisabled()
+                .autocapitalization(.none)
                 .keyboardType(.emailAddress)
                 .font(Font.sourceSansPro(.regular, size: 16))
                 .foregroundStyle(theme.colorTheme.text.black)
@@ -297,6 +302,6 @@ extension SignInView {
 }
 
 #Preview {
-    SignInView(viewModel: SignInViewModel())
+    return SignInView(viewModel: SignInViewModel(communication: CommunicationManager()))
         .environmentObject(AppTheme())
 }
